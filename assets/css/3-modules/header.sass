@@ -1,0 +1,35 @@
+#home-wrap
+  header
+    background-color: $white
+    height: 50px
+    padding: 10px 50px
+    display: flex
+    justify-content: space-between
+
+    .logo
+      +hide-text
+      background: 
+        image: url("../img/logo.svg")
+        repeat: no-repeat
+        position: left
+        size: contain
+      height: 100%
+      width: 120px
+
+    .site-nav
+      ul
+        li
+          display: inline-block
+          text-align: right
+          margin-right: 1em
+          &:last-child
+            margin-right: 0
+  
+  // EN EL CASO DE QUE ESTÉ EN LA PORTADA EL HEADER CAMBIA
+  #portada>header
+    background: none
+    
+
+
+
+

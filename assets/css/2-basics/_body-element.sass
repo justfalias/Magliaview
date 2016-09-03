@@ -6,3 +6,49 @@ body
   color: #666
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
+  box-sizing: border-box
+
+// MARGINS PADDINGS Y POSICIONES
+h1,h2,h3,h4,h5,h6
+  margin: 0
+  padding: 0
+.text-center
+  text-align: center
+.flex
+  display: flex
+.flex-vertical
+  flex-direction: column
+  justify-content: space-between
+.wrapper
+  width: 80%
+  margin: 0 auto
+.full-height
+  height: 100vh
+  
+// UL LI
+ul
+  list-style: none
+
+// BOTONES
+.btn-group
+  .btn
+    margin: 1em
+    padding: 1em
+
+// COLORES
+.text-highlight
+  color: $highlight
+.text-white
+  color: $white
+.btn-highlight
+  color: $white
+  background-color: $highlight
+  &:hover
+    color: $white 
+    background-color: lighten($highlight, 20%)
+.btn-white
+  background-color: $white
+  color: $black
+  &:hover
+    color: $black
+    background-color: darken($white, 20%)
